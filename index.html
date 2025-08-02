@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Road Map Ask System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🧠 Road Map Ask System</h1>
+    <div class="controls">
+        <label>ผลจริง:</label>
+        <button onclick="setResult('P')">P</button>
+        <button onclick="setResult('B')">B</button>
+        <button onclick="setResult('T')">T</button>
+        <br>
+        <label>Big Eye:</label>
+        <button onclick="setEye('big', '🔴')">🔴</button>
+        <button onclick="setEye('big', '🔵')">🔵</button>
+        <label>Small:</label>
+        <button onclick="setEye('small', '🔴')">🔴</button>
+        <button onclick="setEye('small', '🔵')">🔵</button>
+        <label>Cockroach:</label>
+        <button onclick="setEye('cockroach', '🔴')">🔴</button>
+        <button onclick="setEye('cockroach', '🔵')">🔵</button>
+        <button onclick="addEntry()">เพิ่มข้อมูล</button>
+        <button onclick="resetAll()">รีเซตทั้งหมด</button>
+    </div>
+    <div id="output"></div>
+    <table>
+        <thead>
+            <tr>
+                <th>ตา</th>
+                <th>ผลจริง</th>
+                <th>Big Eye</th>
+                <th>Small</th>
+                <th>Cockroach</th>
+                <th>Ask</th>
+                <th>คำแนะนำ</th>
+                <th>เคยออก P/B</th>
+            </tr>
+        </thead>
+        <tbody id="historyBody"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
